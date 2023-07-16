@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You are invited!</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!--Navigation-->
+    <header>
+        <div class="header row container">
+            <div class="toggleMenu" onclick="toggleMenu();"></div>
+            <nav class="navigation row">
+                <ul class="row">
+                    <li><a href="#homepage" onclick="toggleMenu();">Home</a></li>
+                    <li><a href="#details" onclick="toggleMenu();">Details</a></li>
+                    <li><a href="#entourage" onclick="toggleMenu();">Entourage</a></li>
+                    <li><a href="#memorylane" onclick="toggleMenu();">Memory Lane</a></li>
+                    <li><a href="#gifts" onclick="toggleMenu();">Gifts</a></li>
+                    <li><a href="#rsvp" onclick="toggleMenu();">RSVP</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <!--End Navigation-->
+
+    <!--Logo Banner-->
+    <section class="banner-area" id="homepage">
+        <div class="banner-img"></div>
+    </section>
+    <!--End Logo Banner-->
+
+    <!--invitation Section-->
+    <section class="invitation">
+        <div class="container">
+            <h4>Together with families</h4>
+            <div class="invitation-content">
+                <div class="row flex">
+                    <div>
+                        <h1>Pharaoh Amenhotep ll M. Bhasa</h1>
+                        <h5>and</h5>
+                        <h1>Lorah Marie Nhel M. Alfiler</h1>
+                        <h4>Request the honor of your presence</h4>
+                        <h4>at their wedding</h4>
+                    </div>
+                </div>
+                <div class="banner-img"></div>
+                <div class="row flex">
+                    <div>
+                        <h3 class="invi-loc-top">Friday, the Fifth of January</h3>
+                        <h3>Two thousand twenty four</h3>
+                        <h3>At four thirty in the afternoon</h3>
+                    </div>
+                </div>
+                <div class="row flex">
+                    <div>
+                        <h2>8 Temple Drive at Greenmeadows III</h2>
+                        <h3>Quezon City, Metro Manila</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End invitation Section-->
+
+    <!--Details-->
+    <section class="details" id="details">
+        <div class="container-cover">
+        </div>
+        <div class="container">
+            <h1 class="bc-header">Wedding Details</h1>
+            <div class="filter-btns row">
+                <div class="filter-btn active det-header" data-tab="1">Venue</div>
+                <div class="filter-btn det-header" data-tab="2">Dress Code</div>
+            </div>
+            <div class="filter-cards row tab1 t-active">
+                <div class="row flex">
+                    <h4>Ceremony and Reception will be held at the garden and manor of </br> 8 Temple Drive, Greenmeadows III, Quezon City</h4>
+                </div>
+                <div class="row-center flex">
+                    <div class="row flex">
+                        <div>
+                            <h4 class="det-header">Ceremony</h4>
+                            <p class="det-time">1630 - 1730</p>
+                        </div>
+                        <div>
+                            <h4 class="det-header">Reception</h4>
+                            <p class="det-time">1830 - 2230</p>
+                        </div>
+                    </div>
+                    <div class="row flex">
+                        <button type="submit" class="page-btn row"><a href="https://goo.gl/maps/5CkrbSwa1RMBC2Sc7" target="_blank"><h5>View Map</h5></a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-cards row tab2">
+                <div class="flex-header">
+                    <h4>STRICTLY ALL BLACK AND FORMAL</h4>
+                </div>
+                <div class="row">
+                    <div>
+                        <h3 class="det-header">GENTS</h3>
+                        <div>
+                            <ul class="row flex-list">
+                                <li>Black Coat & Bowtie</li>
+                                <li>Black Suit & Tie</li>
+                                <li>Black Pants</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./media/dresscode.jpg" alt="">
+                    </div>
+                    <div>
+                        <h3 class="det-header">LADIES</h3>
+
+                        <div>
+                            <ul class="row flex-list">
+                                <li>Black Dresses</li>
+                                <li>Long or tea-length gown</li>
+                                <li>Black Pants and blouse</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row flex flex-note">
+                    <h5>Please avoid wearing light colored coat or gown.</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Details-->
+
+    <!--Entourage-->
+    <section class="entourage" id="entourage">
+        <div class="container">
+            <div>
+                <h1 class="bc-header">Entourage</h1>
+            </div>
+            <h2 class="h2-header"> Parents </h2>
+            <div class="row flex">
+                <div>
+                    <h2 class="h2-header"> Bride </h2>
+                    <h3> Mr. Romulo M. Alfiler </h3>
+                    <h3> Mrs. Mercedita M. Alfiler </h3>
+
+                </div>
+                <div>
+                    <h2 class="h2-header"> Groom </h2>
+                    <h3> Mrs. Haydee M. Bhasa </h3>
+                </div>
+            </div>
+            <div class="row flex">
+                <div>
+                    <h2 class="h2-header"> Principal Sponsors </h2>
+                    <div class="row flex">
+                        <div>
+                            <h3>Godparent #1</h3>
+                            <h3>Godparent #2</h3>
+                            <h3>Godparent #3</h3>
+                        </div>
+                        <div>
+                            <h3>Godparent #4</h3>
+                            <h3>Godparent #5</h3>
+                            <h3>Godparent #6</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex">
+                <div>
+                    <h2 class="h2-header"> Matron of Honor </h2>
+                    <h3> Mrs. Sarah Marie Ched M. Alfiler-Lucero </h3>
+
+                </div>
+                <div>
+                    <h2 class="h2-header"> Best Man </h2>
+                    <h3> Bestman Name </h3>
+                </div>
+            </div>
+            <div>
+                <h2 class="h2-header"> Ring Bearers </h2>
+                <h3> Teo Martin A. Lucero </h3>
+                <h3> Xaviell Aeden B. Asin </h3>
+            </div>
+
+    </section>
+
+    <!--End Entourage-->
+
+    <!--Memory Lane-->
+    <section class="memorylane" id="memorylane">
+        <div class="row flex container">
+            <div class="memorylane-content">
+                <h1 class="bc-header">Memory Lane</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non culpa, fugiat aliquam similique ipsum ullam dolor magni esse quasi maxime suscipit earum. Aut dolorem obcaecati praesentium perspiciatis assumenda officiis totam!</p>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./media/image2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./media/image1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./media/image3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./media/image4.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End memory Lane-->
+
+    <!--Gifts-->
+    <section class="gifts" id="gifts">
+        <div class="row flex container">
+            <h1 class="bc-header">Gifts</h1>
+            <h3>We are so excited to have you join our special day, and your presence at our wedding is the best gift we could ask for. However, if we are to be honored with a present from you, a monetary gift towards our [insert how funds will be used] would
+                be very much appreciated.</h3>
+        </div>
+    </section>
+    <!--End Gifts-->
+
+    <!--RSVP-->
+    <section class="rsvp" id="rsvp">
+        <div class="container">
+            <h1 class="bc-header">Répondez S'il Vous Plaît</h1>
+            <h3> on or before the <span>eighth of December </span></h3>
+            <form action="" id="rsvpForm">
+                <div class="form row">
+                    <div class="input row">
+                        <label for="">First Name <span>*</span></label>
+                        <input type="text" name="fName" id="fName" required/>
+                    </div>
+                    <div class="input row">
+                        <label for="">Last Name <span>*</span></label>
+                        <input type="text" name="lName" id="lName" required/>
+                    </div>
+                    <div class="input row">
+                        <label for="">Mobile Number <span>*</span></label>
+                        <input type="tel" name="mobNum" id="mobNum" required pattern="^(09|9|\+639|639)\d{9}$" title="Invalid mobile number." />
+                    </div>
+                    <div class="input row">
+                        <label for="">Email Address</label>
+                        <input type="email" name="eAdd" id="eAdd" pattern="^([a-z0-9_\.-]+\@[\da-z\.-]+\.[a-z\.]{2,6})$" />
+                    </div>
+                    <div class="input row">
+                        <label for="">Attendance <span>*</span></label>
+                        <div class="option row">
+                            <div>
+                                <label class="invite-btn">
+                                    <input type="radio" name="invite" id="accept" value="Accept"> accepts with pleasure
+                                </label>
+                            </div>
+                            <div class="checkbox-option" id="checkbox-option">
+                                <input type="checkbox" name="optCeremony" id="optCeremony" value="Ceremony"> Wedding Ceremony
+                                <input type="checkbox" name="optReception" id="optReception" value="Reception"> Reception
+                            </div>
+                            <div class="numGuestLbl" id="numGuestInput">
+                                <label for="">Number of Guests
+                                    <input type="number" name="numGuest" id="numGuest" min="0" max="2" size="50"/>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input row">
+                        <label class="invite-btn">
+                            <input type="radio" name="invite" id="decline" value="Decline"> declines with regrets
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="page-btn row" id="submitForm">Submit</button>
+            </form>
+        </div>
+    </section>
+    <!--End RSVP-->
+
+    <!--Footer-->
+    <footer class="container">
+        <ul class="row">
+            <li><a href="#homepage">Home</a></li>
+            <li><a href="#details">Details</a></li>
+            <li><a href="#entourage">Entourage</a></li>
+            <li><a href="#memorylane">Memory Lane</a></li>
+            <li><a href="#gifts">Gifts</a></li>
+            <li><a href="#rsvp">RSVP</a></li>
+        </ul>
+        <p class="copy-right">&copy; 2023. All Rights Reserved.</p>
+    </footer>
+    <!--End Footer-->
+</body>
+
+</html>
