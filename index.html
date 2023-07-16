@@ -53,7 +53,8 @@
                         <h4>at their wedding</h4>
                     </div>
                 </div>
-                <div class="banner-img"></div>
+                <!-- <div class="banner-img"></div> -->
+                <!-- <div class="divider-img"><img src="./media/divider.png" alt=""></div> -->
                 <div class="row flex">
                     <div>
                         <h3 class="invi-loc-top">Friday, the Fifth of January</h3>
@@ -63,7 +64,7 @@
                 </div>
                 <div class="row flex">
                     <div>
-                        <h2>8 Temple Drive at Greenmeadows III</h2>
+                        <h1 class="fontStyle">8 Temple Drive at Greenmeadows lll</h1>
                         <h3>Quezon City, Metro Manila</h3>
                     </div>
                 </div>
@@ -77,64 +78,61 @@
         <div class="container-cover">
         </div>
         <div class="container">
-            <h1 class="bc-header">Wedding Details</h1>
-            <div class="filter-btns row">
-                <div class="filter-btn active det-header" data-tab="1">Venue</div>
-                <div class="filter-btn det-header" data-tab="2">Dress Code</div>
+            <div>
+                <h1 class="bc-header">Wedding Details</h1>
             </div>
-            <div class="filter-cards row tab1 t-active">
-                <div class="row flex">
-                    <h4>Ceremony and Reception will be held at the garden and manor of </br> 8 Temple Drive, Greenmeadows III, Quezon City</h4>
+            <div class="row">
+                <div>
+                    <h4 class="det-header">Ceremony</h4>
+                    <p class="det-time">04:30 PM - 05:30 PM</p>
                 </div>
-                <div class="row-center flex">
-                    <div class="row flex">
-                        <div>
-                            <h4 class="det-header">Ceremony</h4>
-                            <p class="det-time">1630 - 1730</p>
-                        </div>
-                        <div>
-                            <h4 class="det-header">Reception</h4>
-                            <p class="det-time">1830 - 2230</p>
-                        </div>
-                    </div>
-                    <div class="row flex">
-                        <button type="submit" class="page-btn row"><a href="https://goo.gl/maps/5CkrbSwa1RMBC2Sc7" target="_blank"><h5>View Map</h5></a></button>
-                    </div>
+                <div>
+                    <h4 class="det-header">Reception</h4>
+                    <p class="det-time">06:30 PM - 10:30 PM</p>
                 </div>
             </div>
-            <div class="filter-cards row tab2">
-                <div class="flex-header">
-                    <h4>STRICTLY ALL BLACK AND FORMAL</h4>
-                </div>
-                <div class="row">
-                    <div>
-                        <h3 class="det-header">GENTS</h3>
-                        <div>
-                            <ul class="row flex-list">
-                                <li>Black Coat & Bowtie</li>
-                                <li>Black Suit & Tie</li>
-                                <li>Black Pants</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="./media/dresscode.jpg" alt="">
-                    </div>
-                    <div>
-                        <h3 class="det-header">LADIES</h3>
+            <div class="venue-map">
+                <h4 class="det-header">Map</h4>
+            </div>
+            <div class="venue-img">
+            </div>
 
-                        <div>
-                            <ul class="row flex-list">
-                                <li>Black Dresses</li>
-                                <li>Long or tea-length gown</li>
-                                <li>Black Pants and blouse</li>
-                            </ul>
-                        </div>
+            <div class="det-header">
+                <h4>DRESS CODE</h4>
+            </div>
+            <div class="flex-header">
+                <h5>STRICTLY ALL BLACK AND FORMAL</h5>
+            </div>
+            <div class="rowlist">
+                <div>
+                    <h3 class="det-header">GENTS</h3>
+                    <div>
+                        <ul class="row list">
+                            <li>Black Suit & Tie</li>
+                        </ul>
+                        <p>&nbsp;</p>
+                        <p>Bowtie preferred</p>
                     </div>
                 </div>
-                <div class="row flex flex-note">
-                    <h5>Please avoid wearing light colored coat or gown.</h5>
+                <div>
+                    <img src="./media/dresscode.jpg" alt="">
+                    <div class="row flex flex-note">
+                        <h5>Please avoid wearing light colored coat or gown.</h5>
+                    </div>
                 </div>
+                <div>
+                    <h3 class="det-header">LADIES</h3>
+                    <div>
+                        <ul class="row list">
+                            <li>Black gown or tea-length dress</li>
+                        </ul>
+                        <p>Long gown preferred</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h4 class="det-header det-child">Children</h4>
+                <p class="det-note">While we love to watch children run and play <br/> this is an adult only kind of day.</p>
             </div>
         </div>
     </section>
@@ -152,7 +150,6 @@
                     <h2 class="h2-header"> Bride </h2>
                     <h3> Mr. Romulo M. Alfiler </h3>
                     <h3> Mrs. Mercedita M. Alfiler </h3>
-
                 </div>
                 <div>
                     <h2 class="h2-header"> Groom </h2>
@@ -220,8 +217,7 @@
     <section class="gifts" id="gifts">
         <div class="row flex container">
             <h1 class="bc-header">Gifts</h1>
-            <h3>We are so excited to have you join our special day, and your presence at our wedding is the best gift we could ask for. However, if we are to be honored with a present from you, a monetary gift towards our [insert how funds will be used] would
-                be very much appreciated.</h3>
+            <h3>Your love, laughter, and company on our wedding day is the greatest gift of all. But if a gift is on your mind a monetary contribution would be kind. It will help us more than words can say to celebrate our special day.</h3>
         </div>
     </section>
     <!--End Gifts-->
@@ -251,27 +247,30 @@
                     </div>
                     <div class="input row">
                         <label for="">Attendance <span>*</span></label>
-                        <div class="option row">
+                        <div class="input row">
                             <div>
                                 <label class="invite-btn">
                                     <input type="radio" name="invite" id="accept" value="Accept"> accepts with pleasure
                                 </label>
                             </div>
-                            <div class="checkbox-option" id="checkbox-option">
-                                <input type="checkbox" name="optCeremony" id="optCeremony" value="Ceremony"> Wedding Ceremony
-                                <input type="checkbox" name="optReception" id="optReception" value="Reception"> Reception
-                            </div>
-                            <div class="numGuestLbl" id="numGuestInput">
-                                <label for="">Number of Guests
-                                    <input type="number" name="numGuest" id="numGuest" min="0" max="2" size="50"/>
+                            <div>
+                                <label class="invite-btn">
+                                    <input type="radio" name="invite" id="decline" value="Decline"> declines with regrets
                                 </label>
                             </div>
                         </div>
                     </div>
-                    <div class="input row">
-                        <label class="invite-btn">
-                            <input type="radio" name="invite" id="decline" value="Decline"> declines with regrets
-                        </label>
+                    <div class="input row event-select" id="checkbox-option">
+                        <label for="">Select event you're attending<span>*</span>:</label>
+                        <div class="input row">
+                            <div class="checkbox-option" id="checkbox-option1">
+                                <input type="checkbox" name="optCeremony" id="optCeremony" value="Ceremony"> Wedding Ceremony
+
+                            </div>
+                            <div class="checkbox-option" id="checkbox-option2">
+                                <input type="checkbox" name="optReception" id="optReception" value="Reception"> Reception
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <button type="submit" class="page-btn row" id="submitForm">Submit</button>

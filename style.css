@@ -1,11 +1,6 @@
 @font-face {
-    font-family: "Caghen";
-    src: url(./media/fonts/Caghen.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: "Aramis";
-    src: url(./media/fonts/Aramis.ttf) format("truetype");
+    font-family: "Butler_Regular";
+    src: url(./media/fonts/Butler_Regular.otf) format("opentype");
 }
 
 @font-face {
@@ -22,7 +17,7 @@
 *::after,
 *::before {
     box-sizing: border-box;
-    font-family: 'Aramis', serif;
+    font-family: 'Butler_Regular', serif;
     font-weight: 400;
     color: var(--cl1--2--);
 }
@@ -129,6 +124,13 @@ ul {
     font-family: 'BlackChancery', serif;
 }
 
+.divider-img {
+    width: 10em;
+    height: 5em;
+    align-items: center;
+    /* align-content: center; */
+}
+
 
 /*Navigation*/
 
@@ -223,10 +225,11 @@ footer a:hover {
     padding-bottom: 200px;
 }
 
-.invitation h1 {
+.invitation h1,
+.fontStyle {
     font-size: 60px;
-    padding-top: 0.1em;
-    padding-bottom: 0.5em;
+    padding-top: 0.05em;
+    padding-bottom: 0.05em;
     text-align: center;
     color: var(--cl1--3--);
     font-family: 'Flaemische', sans-serif;
@@ -235,25 +238,26 @@ footer a:hover {
 .invitation h2,
 .invitation h3 {
     text-transform: uppercase;
-    padding: 0.2em 0;
+    padding: 0.05em 0;
     text-align: center;
+    font-size: 27.5px;
     color: var(--cl1--2--);
 }
 
 .invitation h4 {
     text-align: center;
-    text-transform: none;
+    text-transform: uppercase;
     color: var(--cl1--2--);
-    font-size: 27.5px;
-    padding-bottom: 1em;
-    padding-top: 0.2em;
+    font-size: 22px;
+    padding-bottom: 0.5em;
+    padding-top: 0.05em;
 }
 
 .invitation h5 {
     text-align: center;
-    text-transform: none;
+    text-transform: uppercase;
     color: var(--cl1--2--);
-    font-size: 15px;
+    font-size: 19px;
     padding-bottom: 0;
     padding-top: 0;
 }
@@ -289,53 +293,64 @@ footer a:hover {
     padding-bottom: 5em;
 }
 
+.details .row {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    gap: clamp(7.5em, 4vw, 3em);
+    padding: 5% 0;
+}
+
+.details .flex {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: first baseline;
+    gap: clamp(2em, 5vw, 5em);
+    padding-bottom: 0.5em;
+}
+
+.details .venue-map {
+    display: block;
+    justify-content: center;
+    align-content: flex-start;
+    gap: clamp(7.5em, 4vw, 3em);
+}
+
+.details .venue-img {
+    background: url(./media/Venue_Location.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    min-width: 200px;
+    min-height: 500px;
+    border: 2px solid var(--cl1--2--);
+    border-radius: 115px 150px 130px 0px;
+}
+
+.details .rowlist {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    gap: clamp(2.5em, 2vw, 1em);
+    padding: 5% 0;
+}
+
+.details img {
+    border: 2px solid var(--cl1--2--);
+    size-adjust: 10%;
+    min-width: 10%;
+    min-height: 10%;
+}
+
 .details h1 {
     font-size: 55px;
     text-align: center;
     color: var(--cl1--3--);
-}
-
-.details .filter-btns {
-    align-items: center;
-    gap: 3em;
-    padding: 1em 0;
-    max-width: max-content;
-    overflow-x: scroll;
-    margin: 0 auto;
-}
-
-.details .row-center {
-    align-items: flex-start;
-    flex: 5 1 20em;
-    gap: 3em;
-    padding: 1em 0;
-    margin: 0 auto;
-}
-
-.details .filter-btns::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-}
-
-.details .filter-cards {
-    padding-top: 2em;
-}
-
-.details .filter-cards .row {
-    align-items: flex-start;
-    gap: clamp(2em, 5vw, 5em);
-}
-
-.details .filter-cards .row>* {
-    flex: 1 1 20em;
-}
-
-.details .filter-btns .row+.row {
-    padding-top: 1em;
-}
-
-.details p+h3 {
-    padding-top: 0.5em;
 }
 
 .details p {
@@ -345,7 +360,7 @@ footer a:hover {
     text-align: center;
 }
 
-.details .filter-cards h3 {
+.details h3 {
     font-size: 32px;
     align-items: center;
     text-transform: none;
@@ -370,11 +385,20 @@ footer a:hover {
     font-weight: bold;
 }
 
-.details .det-time {
+.details h4+.det-header {
+    padding-bottom: 3em;
+}
+
+.details .det-time,
+.det-note {
     font-size: 20px
 }
 
-.details .filter-cards .flex-list {
+.details .det-child {
+    padding-top: 2em;
+}
+
+.details .list {
     padding-left: 12%;
     flex-wrap: wrap;
     text-align: left;
@@ -382,89 +406,18 @@ footer a:hover {
     list-style-type: disc;
 }
 
-.details .filter-cards .flex-list li {
+.details .list li {
     font-size: 22px;
 }
 
-.details .filter-cards .flex-header,
-.flex-note {
+.details .flex-note {
     text-align: center;
-    align-content: center;
+    align-content: top;
     width: 100%;
 }
 
 
 /*End Details*/
-
-
-/*Filter button*/
-
-.filter-btns {
-    gap: 0.5em;
-}
-
-.filter-btn {
-    cursor: pointer;
-    position: relative;
-    font-size: 20px;
-    white-space: nowrap;
-    padding: 0.3em;
-    max-width: max-content;
-    color: var(--cl1--3--);
-}
-
-.filter-btn::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 1px;
-    background: var(--cl1--3--);
-    transition: 0, 0.3s ease-in-out;
-    -webkit-transition: 0, 0.3s ease-in-out;
-    -moz-transition: 0, 0.3s ease-in-out;
-    -ms-transition: 0, 0.3s ease-in-out;
-    -o-transition: 0, 0.3s ease-in-out;
-}
-
-.filter-btn.active::after {
-    width: 100%;
-}
-
-.filter-cards {
-    position: absolute;
-    width: 0;
-    opacity: 0;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 2em;
-    transform: scale(0);
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform-origin: left;
-    transition: opacity 0.3s ease-in-out;
-    -webkit-transition: opacity 0.3s ease-in-out;
-    -moz-transition: opacity 0.3s ease-in-out;
-    -ms-transition: opacity 0.3s ease-in-out;
-    -o-transition: opacity 0.3s ease-in-out;
-}
-
-.filter-cards.t-active {
-    position: relative;
-    width: 100%;
-    opacity: 1;
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-}
-
-
-/*End of filter button*/
 
 
 /*Entourage*/
@@ -505,6 +458,7 @@ footer a:hover {
 
 .entourage .row {
     display: flex;
+    justify-content: center;
 }
 
 .entourage .flex {
@@ -513,10 +467,6 @@ footer a:hover {
     align-items: first baseline;
     gap: clamp(2em, 5vw, 5em);
     padding-bottom: 0.5em;
-}
-
-.entourage .row {
-    justify-content: center;
 }
 
 
@@ -677,11 +627,6 @@ footer a:hover {
     outline: 0;
     max-width: 100%;
     padding: 0.5em;
-    font-family: 'Caghen', serif;
-}
-
-input[type='number'] {
-    width: 9em;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -699,7 +644,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .option .row {
     position: relative;
-    align-items: center;
+    align-items: flex-start;
     text-transform: capitalize;
     font-size: 16px;
     gap: 0.3em;
@@ -735,12 +680,11 @@ input[type=number]::-webkit-outer-spin-button {
     -o-transition: 0.3s ease-in-out;
 }
 
-.option .invite-btn:hover {
+.rsvp .invite-btn:hover {
     color: var(--cl1--3--);
 }
 
-.option .checkbox-option,
-.numGuestLbl {
+.rsvp .event-select {
     visibility: hidden;
 }
 

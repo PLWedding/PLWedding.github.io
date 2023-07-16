@@ -47,7 +47,6 @@ filterPage(".details");
 
 //hide/unhide event buttons
 const checkboxOption = document.getElementById('checkbox-option');
-const numGuestInput = document.getElementById('numGuestInput');
 const radioButtons = document.querySelectorAll('input[name="invite"]');
 radioButtons.forEach(radio => {
     radio.addEventListener('click', handleRadioClick);
@@ -56,10 +55,8 @@ radioButtons.forEach(radio => {
 function handleRadioClick() {
     if (document.getElementById('accept').checked) {
         checkboxOption.style.visibility = "visible";
-        numGuestInput.style.visibility = "visible";
     } else {
         checkboxOption.style.visibility = "hidden";
-        numGuestInput.style.visibility = "hidden";
     }
 }
 
@@ -75,16 +72,12 @@ rsvpForm.addEventListener("submit", (e) => {
     let lastName = document.getElementById("lName").value;
     let email = document.getElementById("eAdd").value;
     let number = document.getElementById("mobNum").value;
-    let numOfGuests = document.getElementById("numGuest").value;
     let rsvpAccept = document.getElementById('accept');
     let rsvpDecline = document.getElementById('decline');
     let optCeremony = document.getElementById('optCeremony');
     let optReception = document.getElementById('optReception');
 
-    if (numOfGuests == "") {
-        numOfGuests = "0";
-    }
-    console.log('Title: PLWedding RSVP | ' + firstName + ' ' + lastName + ' ' + numOfGuests)
+    console.log('Title: PLWedding RSVP | ' + firstName + ' ' + lastName)
     if (rsvpAccept.checked) {
         if (optCeremony.checked && !optReception.checked) {
             console.log(rsvpAccept.value + ' ' + optCeremony.value)
