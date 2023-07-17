@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: "Butler_Bold";
+    src: url(./media/fonts/Butler_Bold.otf) format("opentype");
+}
+
+@font-face {
     font-family: "BlackChancery";
     src: url(./media/fonts/BlackChancery.ttf) format("truetype");
 }
@@ -25,7 +30,7 @@
 html,
 body {
     --cl1--1--: #fcf9f7;
-    --cl1--2--: #353839;
+    --cl1--2--: #3e3d39;
     --cl1--3--: #c6ad83;
     width: 100%;
     height: 100%;
@@ -125,10 +130,12 @@ ul {
 }
 
 .divider-img {
-    width: 10em;
-    height: 5em;
+    width: 7em;
+    height: 1.2em;
+    padding-top: 10%;
     align-items: center;
-    /* align-content: center; */
+    margin: auto;
+    display: block;
 }
 
 
@@ -282,10 +289,10 @@ footer a:hover {
 /*Details*/
 
 .details {
-    position: relative;
-    justify-content: center;
     background-image: url(./media/default-bg.jpg);
-    min-height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .details .container {
@@ -297,15 +304,15 @@ footer a:hover {
     display: flex;
     justify-content: center;
     align-content: flex-start;
-    gap: clamp(7.5em, 4vw, 3em);
-    padding: 5% 0;
+    gap: clamp(4em, 4vw, 3em);
+    padding: 3% 0;
 }
 
 .details .flex {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: first baseline;
-    gap: clamp(2em, 5vw, 5em);
+    gap: clamp(7.5em, 4vw, 3em);
     padding-bottom: 0.5em;
 }
 
@@ -314,37 +321,40 @@ footer a:hover {
     justify-content: center;
     align-content: flex-start;
     gap: clamp(7.5em, 4vw, 3em);
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
-.details .venue-img {
-    background: url(./media/Venue_Location.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
-    transform: scale(0.9);
-    -webkit-transform: scale(0.9);
-    -moz-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    -o-transform: scale(0.9);
-    min-width: 200px;
-    min-height: 500px;
-    border: 2px solid var(--cl1--2--);
-    border-radius: 115px 150px 130px 0px;
+.google-map {
+    padding-top: 50%;
+    padding-bottom: 50%;
+    position: relative;
+    border: 4px solid var(--cl1--3--);
 }
 
-.details .rowlist {
-    display: flex;
-    justify-content: center;
-    align-content: flex-start;
-    gap: clamp(2.5em, 2vw, 1em);
-    padding: 5% 0;
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
 }
 
 .details img {
-    border: 2px solid var(--cl1--2--);
-    size-adjust: 10%;
-    min-width: 10%;
-    min-height: 10%;
+    border: 4px solid var(--cl1--3--);
+    min-height: 75px;
+    min-width: 75px;
+    object-fit: contain;
+    margin: auto;
+    display: block;
+}
+
+.details .dress-code-img {
+    width: 70%;
+    height: 70%;
+    align-content: center;
+    margin: auto;
+    display: block;
 }
 
 .details h1 {
@@ -371,22 +381,28 @@ footer a:hover {
     font-size: 32px;
     text-transform: none;
     text-align: center;
+    line-height: 1;
 }
 
 .details h5 {
-    font-size: 20px;
+    font-size: 18px;
     text-transform: none;
     text-align: center;
     position: relative;
 }
 
-.details .det-header {
-    font-size: 27px;
-    font-weight: bold;
+.details .dress-code {
+    letter-spacing: 2.5px;
+    font-size: 22px;
 }
 
-.details h4+.det-header {
-    padding-bottom: 3em;
+.details .font-bold {
+    font-family: 'Butler_Bold', serif;
+}
+
+.details .det-header {
+    font-size: 27px;
+    padding-bottom: 0.5em;
 }
 
 .details .det-time,
@@ -399,15 +415,15 @@ footer a:hover {
 }
 
 .details .list {
-    padding-left: 12%;
+    margin: auto;
     flex-wrap: wrap;
     text-align: left;
     gap: 0.5em;
-    list-style-type: disc;
 }
 
 .details .list li {
     font-size: 22px;
+    text-align: center;
 }
 
 .details .flex-note {
@@ -415,6 +431,32 @@ footer a:hover {
     align-content: top;
     width: 100%;
 }
+
+.details .rowlist {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    gap: clamp(4em, 2vw, 1em);
+    padding: 2% 5%;
+}
+
+
+/* .details .details-transition1 {
+    background-image: url(./media/transition-g2b.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    width: 100%;
+    height: 100%;
+} */
+
+
+/* .details .black-details {
+    background-image: url(./media/transition-blackmiddle.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} */
 
 
 /*End Details*/
@@ -490,13 +532,7 @@ footer a:hover {
     padding-bottom: 0.2em;
 }
 
-
-/* .memorylane-content {
-    background: rgba(68, 68, 68, 0.8);
-} */
-
 .memorylane h5,
-.time h5,
 .details h3,
 .form span {
     color: black;
@@ -729,6 +765,7 @@ button {
 
 footer {
     padding: 2em 0;
+    background-color: var(--cl1--2--);
 }
 
 footer ul {
@@ -742,6 +779,7 @@ footer p {
     font-size: 10px;
     text-align: center;
     padding-top: 2em;
+    color: var(--cl1--3--)
 }
 
 
@@ -768,10 +806,6 @@ footer p {
     }
     .mySwiper img {
         min-height: 500px;
-    }
-    .entourage .filter-cards div {
-        max-width: 200px;
-        min-width: 200px;
     }
     .details .container {
         max-width: 800px;

@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
     <title>You are invited!</title>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
     <script src="https://smtpjs.com/v3/smtp.js" defer></script>
@@ -53,8 +54,7 @@
                         <h4>at their wedding</h4>
                     </div>
                 </div>
-                <!-- <div class="banner-img"></div> -->
-                <!-- <div class="divider-img"><img src="./media/divider.png" alt=""></div> -->
+                <div class="divider-img"><img src="./media/divider.png" alt=""></div>
                 <div class="row flex">
                     <div>
                         <h3 class="invi-loc-top">Friday, the Fifth of January</h3>
@@ -62,9 +62,13 @@
                         <h3>At four thirty in the afternoon</h3>
                     </div>
                 </div>
+
+                <div class="divider-img"><img src="./media/divider.png" alt=""></div>
                 <div class="row flex">
-                    <div>
-                        <h1 class="fontStyle">8 Temple Drive at Greenmeadows lll</h1>
+                    <div class="invi-loc-top">
+                        <h1 class="fontStyle">8 Temple Drive</h1>
+                        <h3> at Greenmeadows III </br>
+                        </h3>
                         <h3>Quezon City, Metro Manila</h3>
                     </div>
                 </div>
@@ -75,65 +79,70 @@
 
     <!--Details-->
     <section class="details" id="details">
-        <div class="container-cover">
+        <!-- <div class="container-cover">
+        </div> -->
+        <div class="details-transition1">
+            <div class="container">
+                <div>
+                    <h1 class="bc-header">Wedding Details</h1>
+                </div>
+                <div class="row">
+                    <div class="det-header">
+                        <h4>Ceremony</h4>
+                        <p class="det-time">04:30 PM - 05:30 PM</p>
+                    </div>
+                    <div class="det-header">
+                        <h4>Reception</h4>
+                        <p class="det-time">06:30 PM - 10:30 PM</p>
+                    </div>
+                </div>
+                <div class="venue-map det-header">
+                    <h4>Map</h4>
+                </div>
+                <div class="google-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11404.281238600997!2d121.07016779521429!3d14.594634477138568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c90e29f8cd2d%3A0xeac8a255c2eb6660!2s8%20Temple%20Dr%2C%20Greenmeadows%20III%2C%20Quezon%20City%2C%201110%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1689556773381!5m2!1sen!2sph"
+                        width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
         </div>
-        <div class="container">
-            <div>
-                <h1 class="bc-header">Wedding Details</h1>
-            </div>
-            <div class="row">
-                <div>
-                    <h4 class="det-header">Ceremony</h4>
-                    <p class="det-time">04:30 PM - 05:30 PM</p>
-                </div>
-                <div>
-                    <h4 class="det-header">Reception</h4>
-                    <p class="det-time">06:30 PM - 10:30 PM</p>
-                </div>
-            </div>
-            <div class="venue-map">
-                <h4 class="det-header">Map</h4>
-            </div>
-            <div class="venue-img">
-            </div>
-
+        <div class="black-details">
             <div class="det-header">
-                <h4>DRESS CODE</h4>
+                <h4>Dress Code</h4>
             </div>
-            <div class="flex-header">
-                <h5>STRICTLY ALL BLACK AND FORMAL</h5>
+            <div class="dress-code">
+                <h4>STRICTLY ALL <span class="font-bold">BLACK</span> </br>AND FORMAL</h4>
             </div>
             <div class="rowlist">
                 <div>
                     <h3 class="det-header">GENTS</h3>
                     <div>
                         <ul class="row list">
-                            <li>Black Suit & Tie</li>
+                            <li>Black Suit & Bowtie / Necktie</li>
                         </ul>
-                        <p>&nbsp;</p>
                         <p>Bowtie preferred</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="./media/dresscode.jpg" alt="">
-                    <div class="row flex flex-note">
-                        <h5>Please avoid wearing light colored coat or gown.</h5>
                     </div>
                 </div>
                 <div>
                     <h3 class="det-header">LADIES</h3>
                     <div>
                         <ul class="row list">
-                            <li>Black gown or tea-length dress</li>
+                            <li>Black long gown or tea-length dress</li>
                         </ul>
                         <p>Long gown preferred</p>
                     </div>
                 </div>
             </div>
-            <div>
-                <h4 class="det-header det-child">Children</h4>
-                <p class="det-note">While we love to watch children run and play <br/> this is an adult only kind of day.</p>
+            <div class="dress-code-img">
+                <img src="./media/dresscode.jpg" alt="">
+                <div class="row flex flex-note">
+                    <h5>Note: Please avoid wearing light colored coat or gown. </br> You may also bring your own sunglasses and hats for the garden ceremony.</h5>
+                </div>
             </div>
+        </div>
+        <div class="det-header ">
+            <h4 class="det-child">Children</h4>
+            <p class="det-note">While we love to watch children run and play <br/> this is an adult only kind of day.</p>
+        </div>
         </div>
     </section>
     <!--End Details-->
@@ -203,10 +212,23 @@
             </div>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="./media/image2.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="./media/image1.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="./media/image3.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="./media/image4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./media/memlane-img_1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./media/memlane-img_2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./media/memlane-img_3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./media/memlane-img_4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./media/memlane-img_5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./media/memlane-img_6.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./media/memlane-img_7.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./media/memlane-img_8.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./media/memlane-img_9.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./media/memlane-img_10.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./media/memlane-img_11.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./media/memlane-img_12.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./media/memlane-img_13.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./media/memlane-img_14.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./media/memlane-img_15.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./media/memlane-img_16.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./media/memlane-img_17.jpg" alt=""></div>
                 </div>
             </div>
         </div>
