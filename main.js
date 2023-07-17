@@ -67,6 +67,7 @@ function handleRadioClick() {
 const rsvpForm = document.getElementById('rsvpForm');
 rsvpForm.addEventListener("submit", (e) => {
     e.preventDefault();
+    emailjs.init('a60KQhBBVuomxoont');
 
     let firstName = document.getElementById("fName").value;
     let lastName = document.getElementById("lName").value;
@@ -76,22 +77,77 @@ rsvpForm.addEventListener("submit", (e) => {
     let rsvpDecline = document.getElementById('decline');
     let optCeremony = document.getElementById('optCeremony');
     let optReception = document.getElementById('optReception');
-
-    console.log('Title: PLWedding RSVP | ' + firstName + ' ' + lastName)
+    let rsvp = '';
     if (rsvpAccept.checked) {
+        let title = ' See you!';
+        let body = 'We can\'t wait to see you at our ';
+        rsvp = rsvpAccept.value;
         if (optCeremony.checked && !optReception.checked) {
-            console.log(rsvpAccept.value + ' ' + optCeremony.value)
+            emailjs.send("service_4c6smc5", "template_mqntrrp", {
+                    title: title,
+                    firstName: firstName,
+                    lastName: lastName,
+                    body: body + optCeremony.value + '!',
+                    email: email,
+                    number: number,
+                })
+                .then(function() {
+                    console.log('Email Sent!');
+                }, function(error) {
+                    console.log('Email sending failed', error);
+                });
         } else if (!optCeremony.checked && optReception.checked) {
-            console.log(rsvpAccept.value + ' ' + optReception.value)
+            emailjs.send("service_4c6smc5", "template_mqntrrp", {
+                    title: title,
+                    firstName: firstName,
+                    lastName: lastName,
+                    body: body + optReception.value + '!',
+                    email: email,
+                    number: number,
+                })
+                .then(function() {
+                    console.log('Email Sent!');
+                }, function(error) {
+                    console.log('Email sending failed', error);
+                });
         } else if (optCeremony.checked && optReception.checked) {
-            console.log(rsvpAccept.value + ' ' + optCeremony.value + ' ' + optReception.value)
+            emailjs.send("service_4c6smc5", "template_mqntrrp", {
+                    title: title,
+                    firstName: firstName,
+                    lastName: lastName,
+                    body: body + optCeremony.value + ' and ' + optReception.value + '!',
+                    email: email,
+                    number: number,
+                })
+                .then(function() {
+                    console.log('Email Sent!');
+                }, function(error) {
+                    console.log('Email sending failed', error);
+                });
         } else {
             alert('Please select which part of the program you\'ll be attending.')
             return false;
         }
     } else {
-        console.log(rsvpDecline.value)
+        rsvp = rsvpDecline.value;
+        emailjs.send("service_4c6smc5", "template_mqntrrp", {
+                title: '',
+                firstName: firstName,
+                lastName: lastName,
+                body: '',
+                email: email,
+                number: number,
+            })
+            .then(function() {
+                console.log('Email Sent!');
+            }, function(error) {
+                console.log('Email sending failed', error);
+            });
     }
+
+    alert("Thank you!");
+    document.getElementById('rsvpForm').reset();
+    w
 
 });
 //end submit form

@@ -7,7 +7,7 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
     <title>You are invited!</title>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
-    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
     <script src="./main.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
@@ -272,12 +272,12 @@
                         <div class="input row">
                             <div>
                                 <label class="invite-btn">
-                                    <input type="radio" name="invite" id="accept" value="Accept"> accepts with pleasure
+                                    <input type="radio" name="invite" id="accept" value="Accepts with pleasure"> accepts with pleasure
                                 </label>
                             </div>
                             <div>
                                 <label class="invite-btn">
-                                    <input type="radio" name="invite" id="decline" value="Decline"> declines with regrets
+                                    <input type="radio" name="invite" id="decline" value="Declines with regrets"> declines with regrets
                                 </label>
                             </div>
                         </div>
@@ -286,7 +286,7 @@
                         <label for="">Select event you're attending<span>*</span>:</label>
                         <div class="input row">
                             <div class="checkbox-option" id="checkbox-option1">
-                                <input type="checkbox" name="optCeremony" id="optCeremony" value="Ceremony"> Wedding Ceremony
+                                <input type="checkbox" name="optCeremony" id="optCeremony" value="Wedding Ceremony"> Wedding Ceremony
 
                             </div>
                             <div class="checkbox-option" id="checkbox-option2">
@@ -297,6 +297,9 @@
                 </div>
                 <button type="submit" class="page-btn row" id="submitForm">Submit</button>
             </form>
+            <div class="contact">
+                <p> You may also contact us at +639175283049 or thru this email: pb.la.wedding.2024@gmail.com </p>
+            </div>
         </div>
     </section>
     <!--End RSVP-->
