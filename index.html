@@ -8,6 +8,7 @@
     <title>You are invited!</title>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
     <script src="./main.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
@@ -43,7 +44,7 @@
     <!--invitation Section-->
     <section class="invitation">
         <div class="container">
-            <h4>Together with families</h4>
+            <h4>Together with their families</h4>
             <div class="invitation-content">
                 <div class="row flex">
                     <div>
@@ -66,7 +67,7 @@
                 <div class="divider-img"><img src="./media/divider.png" alt=""></div>
                 <div class="row flex">
                     <div class="invi-loc-top">
-                        <h1 class="fontStyle">8 Temple Drive</h1>
+                        <h1>8 Temple Drive</h1>
                         <h3> at Greenmeadows III </br>
                         </h3>
                         <h3>Quezon City, Metro Manila</h3>
@@ -79,9 +80,7 @@
 
     <!--Details-->
     <section class="details" id="details">
-        <!-- <div class="container-cover">
-        </div> -->
-        <div class="details-transition1">
+        <div class="details-background-img">
             <div class="container">
                 <div>
                     <h1 class="bc-header">Wedding Details</h1>
@@ -103,46 +102,43 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11404.281238600997!2d121.07016779521429!3d14.594634477138568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c90e29f8cd2d%3A0xeac8a255c2eb6660!2s8%20Temple%20Dr%2C%20Greenmeadows%20III%2C%20Quezon%20City%2C%201110%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1689556773381!5m2!1sen!2sph"
                         width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-            </div>
-        </div>
-        <div class="black-details">
-            <div class="det-header">
-                <h4>Dress Code</h4>
-            </div>
-            <div class="dress-code">
-                <h4>STRICTLY ALL <span class="font-bold">BLACK</span> </br>AND FORMAL</h4>
-            </div>
-            <div class="rowlist">
-                <div>
-                    <h3 class="det-header">GENTS</h3>
+                <div class="dress-code-title">
+                    <h4>Dress Code</h4>
+                </div>
+                <div class="dress-code">
+                    <h4>STRICTLY ALL <span class="font-bold">BLACK</span> </br>AND FORMAL</h4>
+                </div>
+                <div class="rowlist">
                     <div>
-                        <ul class="row list">
-                            <li>Black Suit & Bowtie / Necktie</li>
-                        </ul>
-                        <p>Bowtie preferred</p>
+                        <h3 class="det-header">GENTS</h3>
+                        <div>
+                            <ul class="row list">
+                                <li>Black Suit & Bowtie / Necktie</li>
+                            </ul>
+                            <p>Bowtie preferred</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="det-header">LADIES</h3>
+                        <div>
+                            <ul class="row list">
+                                <li>Black long gown or tea-length dress</li>
+                            </ul>
+                            <p>Long gown preferred</p>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <h3 class="det-header">LADIES</h3>
-                    <div>
-                        <ul class="row list">
-                            <li>Black long gown or tea-length dress</li>
-                        </ul>
-                        <p>Long gown preferred</p>
+                <div class="dress-code-img">
+                    <img src="./media/dresscode.jpg" alt="">
+                    <div class="row flex flex-note">
+                        <h5>Note: Please avoid wearing light colored coat or gown. </br> You may also bring your own sunglasses and hats for the garden ceremony.</h5>
                     </div>
                 </div>
-            </div>
-            <div class="dress-code-img">
-                <img src="./media/dresscode.jpg" alt="">
-                <div class="row flex flex-note">
-                    <h5>Note: Please avoid wearing light colored coat or gown. </br> You may also bring your own sunglasses and hats for the garden ceremony.</h5>
+                <div class="det-header">
+                    <h4 class="det-child">Children</h4>
+                    <p class="det-note">While we love to watch children run and play <br/> this is an adult only kind of day.</p>
                 </div>
             </div>
-        </div>
-        <div class="det-header ">
-            <h4 class="det-child">Children</h4>
-            <p class="det-note">While we love to watch children run and play <br/> this is an adult only kind of day.</p>
-        </div>
         </div>
     </section>
     <!--End Details-->
@@ -153,15 +149,14 @@
             <div>
                 <h1 class="bc-header">Entourage</h1>
             </div>
-            <h2 class="h2-header"> Parents </h2>
             <div class="row flex">
                 <div>
-                    <h2 class="h2-header"> Bride </h2>
+                    <h2 class="h2-header"> Parents of the Bride </h2>
                     <h3> Mr. Romulo M. Alfiler </h3>
                     <h3> Mrs. Mercedita M. Alfiler </h3>
                 </div>
                 <div>
-                    <h2 class="h2-header"> Groom </h2>
+                    <h2 class="h2-header"> Parent of the Groom </h2>
                     <h3> Mrs. Haydee M. Bhasa </h3>
                 </div>
             </div>
@@ -198,7 +193,7 @@
                 <h3> Teo Martin A. Lucero </h3>
                 <h3> Xaviell Aeden B. Asin </h3>
             </div>
-
+            <div class="divider-img"><img src="./media/divider.png" alt=""></div>
     </section>
 
     <!--End Entourage-->
@@ -232,9 +227,9 @@
                 </div>
             </div>
         </div>
+        <div class="divider-img"><img src="./media/divider.png" alt=""></div>
     </section>
     <!--End memory Lane-->
-
     <!--Gifts-->
     <section class="gifts" id="gifts">
         <div class="row flex container">
@@ -246,75 +241,80 @@
 
     <!--RSVP-->
     <section class="rsvp" id="rsvp">
-        <div class="container">
-            <h1 class="bc-header">Répondez S'il Vous Plaît</h1>
-            <h3> on or before the <span>eighth of December </span></h3>
-            <form action="" id="rsvpForm">
-                <div class="form row">
-                    <div class="input row">
-                        <label for="">First Name <span>*</span></label>
-                        <input type="text" name="fName" id="fName" required/>
-                    </div>
-                    <div class="input row">
-                        <label for="">Last Name <span>*</span></label>
-                        <input type="text" name="lName" id="lName" required/>
-                    </div>
-                    <div class="input row">
-                        <label for="">Mobile Number <span>*</span></label>
-                        <input type="tel" name="mobNum" id="mobNum" required pattern="^(09|9|\+639|639)\d{9}$" title="Invalid mobile number." />
-                    </div>
-                    <div class="input row">
-                        <label for="">Email Address</label>
-                        <input type="email" name="eAdd" id="eAdd" pattern="^([a-z0-9_\.-]+\@[\da-z\.-]+\.[a-z\.]{2,6})$" />
-                    </div>
-                    <div class="input row">
-                        <label for="">Attendance <span>*</span></label>
+        <div class="rsvp-background-img">
+            <div class="container">
+                <h1 class="bc-header">Répondez S'il Vous Plaît</h1>
+                <h3> on or before the eighth of December </h3>
+                <form action="" id="rsvpForm">
+                    <div class="form row">
                         <div class="input row">
-                            <div>
-                                <label class="invite-btn">
-                                    <input type="radio" name="invite" id="accept" value="Accepts with pleasure"> accepts with pleasure
-                                </label>
-                            </div>
-                            <div>
-                                <label class="invite-btn">
-                                    <input type="radio" name="invite" id="decline" value="Declines with regrets"> declines with regrets
-                                </label>
+                            <label for="">First Name <span>*</span></label>
+                            <input type="text" name="fName" id="fName" required/>
+                        </div>
+                        <div class="input row">
+                            <label for="">Last Name <span>*</span></label>
+                            <input type="text" name="lName" id="lName" required/>
+                        </div>
+                        <div class="input row">
+                            <label for="">Mobile Number <span>*</span></label>
+                            <input type="tel" name="mobNum" id="mobNum" required pattern="^(09|9|\+639|639)\d{9}$" title="Invalid mobile number." />
+                        </div>
+                        <div class="input row">
+                            <label for="">Email Address</label>
+                            <input type="email" name="eAdd" id="eAdd" pattern="^([a-z0-9_\.-]+\@[\da-z\.-]+\.[a-z\.]{2,6})$" />
+                        </div>
+                        <div class="input row">
+                            <label for="">Attendance <span>*</span></label>
+                            <div class="input row">
+                                <div>
+                                    <label class="invite-btn">
+                                        <input type="radio" name="invite" id="accept" value="Accepts with pleasure"> accepts with pleasure
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="invite-btn">
+                                        <input type="radio" name="invite" id="decline" value="Declines with regrets"> declines with regrets
+                                    </label>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="input row event-select" id="checkbox-option">
-                        <label for="">Select event you're attending<span>*</span>:</label>
-                        <div class="input row">
-                            <div class="checkbox-option" id="checkbox-option1">
-                                <input type="checkbox" name="optCeremony" id="optCeremony" value="Wedding Ceremony"> Wedding Ceremony
+                        <div class="input row event-select" id="checkbox-option">
+                            <label for="">Select event you're attending<span>*</span>:</label>
+                            <div class="input row">
+                                <div class="checkbox-option" id="checkbox-option1">
+                                    <input type="checkbox" name="optCeremony" id="optCeremony" value="Wedding Ceremony"> Wedding Ceremony
 
-                            </div>
-                            <div class="checkbox-option" id="checkbox-option2">
-                                <input type="checkbox" name="optReception" id="optReception" value="Reception"> Reception
+                                </div>
+                                <div class="checkbox-option" id="checkbox-option2">
+                                    <input type="checkbox" name="optReception" id="optReception" value="Reception"> Reception
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <button type="submit" class="page-btn row" id="submitForm">Submit</button>
+                </form>
+                <div class="contact">
+                    <p> You may also contact us at +639175283049 or thru email: pb.la.wedding.2024@gmail.com </p>
                 </div>
-                <button type="submit" class="page-btn row" id="submitForm">Submit</button>
-            </form>
-            <div class="contact">
-                <p> You may also contact us at +639175283049 or thru this email: pb.la.wedding.2024@gmail.com </p>
             </div>
         </div>
     </section>
     <!--End RSVP-->
 
     <!--Footer-->
-    <footer class="container">
-        <ul class="row">
-            <li><a href="#homepage">Home</a></li>
-            <li><a href="#details">Details</a></li>
-            <li><a href="#entourage">Entourage</a></li>
-            <li><a href="#memorylane">Memory Lane</a></li>
-            <li><a href="#gifts">Gifts</a></li>
-            <li><a href="#rsvp">RSVP</a></li>
-        </ul>
-        <p class="copy-right">&copy; 2023. All Rights Reserved.</p>
+    <footer>
+        <div class="container">
+            <ul class="row">
+                <li><a href="#homepage">Home</a></li>
+                <li><a href="#details">Details</a></li>
+                <li><a href="#entourage">Entourage</a></li>
+                <li><a href="#memorylane">Memory Lane</a></li>
+                <li><a href="#gifts">Gifts</a></li>
+                <li><a href="#rsvp">RSVP</a></li>
+            </ul>
+            <p class="copy-right">&copy; 2023. All Rights Reserved.</p>
+        </div>
+
     </footer>
     <!--End Footer-->
 </body>
