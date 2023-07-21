@@ -754,6 +754,11 @@
     .rsvp .checkbox-option {
         color: var(--cl1--3--);
     }
+    
+    .rsvp .contact p:active,
+    p:visited {
+        color: var(--cl1--3--);
+    }
     /*End RSVP*/
     /*Page Button*/
     
