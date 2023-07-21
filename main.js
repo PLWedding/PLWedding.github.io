@@ -86,20 +86,21 @@ rsvpForm.addEventListener("submit", (e) => {
         let body = 'We can\'t wait to see you at our ';
         rsvp = rsvpAccept.value;
         if (optCeremony.checked && !optReception.checked) {
-            // emailjs.send("service_4c6smc5", "template_mqntrrp", {
-            //         title: title,
-            //         firstName: firstName,
-            //         lastName: lastName,
-            //         body: body + optCeremony.value + '!',
-            //         email: email,
-            //         number: number,
-            //     })
-            //     .then(function() {
-            //         console.log('Email Sent!');
-            //     }, function(error) {
-            //         console.log('Email sending failed', error);
-            //     });
+            emailjs.send("service_4c6smc5", "template_mqntrrp", {
+                    title: title,
+                    firstName: firstName,
+                    lastName: lastName,
+                    body: body + optCeremony.value + '!',
+                    email: email,
+                    number: number,
+                })
+                .then(function() {
+                    console.log('Email Sent!');
+                }, function(error) {
+                    console.log('Email sending failed', error);
+                });
             Swal.fire({
+                heightAuto: false,
                 title: 'Thank you!',
                 text: 'Your form has been sent.',
                 imageUrl: './media/splash-banner.jpg',
@@ -109,20 +110,21 @@ rsvpForm.addEventListener("submit", (e) => {
             })
             document.getElementById('rsvpForm').reset();
         } else if (!optCeremony.checked && optReception.checked) {
-            // emailjs.send("service_4c6smc5", "template_mqntrrp", {
-            //         title: title,
-            //         firstName: firstName,
-            //         lastName: lastName,
-            //         body: body + optReception.value + '!',
-            //         email: email,
-            //         number: number,
-            //     })
-            //     .then(function() {
-            //         console.log('Email Sent!');
-            //     }, function(error) {
-            //         console.log('Email sending failed', error);
-            //     });
+            emailjs.send("service_4c6smc5", "template_mqntrrp", {
+                    title: title,
+                    firstName: firstName,
+                    lastName: lastName,
+                    body: body + optReception.value + '!',
+                    email: email,
+                    number: number,
+                })
+                .then(function() {
+                    console.log('Email Sent!');
+                }, function(error) {
+                    console.log('Email sending failed', error);
+                });
             Swal.fire({
+                heightAuto: false,
                 title: 'Thank you!',
                 text: 'Your form has been sent.',
                 imageUrl: './media/splash-banner.jpg',
@@ -132,20 +134,21 @@ rsvpForm.addEventListener("submit", (e) => {
             })
             document.getElementById('rsvpForm').reset();
         } else if (optCeremony.checked && optReception.checked) {
-            // emailjs.send("service_4c6smc5", "template_mqntrrp", {
-            //         title: title,
-            //         firstName: firstName,
-            //         lastName: lastName,
-            //         body: body + optCeremony.value + ' and ' + optReception.value + '!',
-            //         email: email,
-            //         number: number,
-            //     })
-            //     .then(function() {
-            //         console.log('Email Sent!');
-            //     }, function(error) {
-            //         console.log('Email sending failed', error);
-            //     });
+            emailjs.send("service_4c6smc5", "template_mqntrrp", {
+                    title: title,
+                    firstName: firstName,
+                    lastName: lastName,
+                    body: body + optCeremony.value + ' and ' + optReception.value + '!',
+                    email: email,
+                    number: number,
+                })
+                .then(function() {
+                    console.log('Email Sent!');
+                }, function(error) {
+                    console.log('Email sending failed', error);
+                });
             Swal.fire({
+                heightAuto: false,
                 title: 'Thank you!',
                 text: 'Your form has been sent.',
                 imageUrl: './media/splash-banner.jpg',
@@ -155,8 +158,8 @@ rsvpForm.addEventListener("submit", (e) => {
             })
             document.getElementById('rsvpForm').reset();
         } else {
-            // alert('Please select which part of the program you\'ll be attending.')
             Swal.fire({
+                heightAuto: false,
                 icon: 'error',
                 title: 'Oops...',
                 text: 'Please select which part of the program you\'ll be attending.',
@@ -165,20 +168,21 @@ rsvpForm.addEventListener("submit", (e) => {
         }
     } else if (rsvpDecline.checked) {
         rsvp = rsvpDecline.value;
-        // emailjs.send("service_4c6smc5", "template_mqntrrp", {
-        //         title: '',
-        //         firstName: firstName,
-        //         lastName: lastName,
-        //         body: '',
-        //         email: email,
-        //         number: number,
-        //     })
-        //     .then(function() {
-        //         console.log('Email Sent!');
-        //     }, function(error) {
-        //         console.log('Email sending failed', error);
-        //     });
+        emailjs.send("service_4c6smc5", "template_mqntrrp", {
+                title: '',
+                firstName: firstName,
+                lastName: lastName,
+                body: '',
+                email: email,
+                number: number,
+            })
+            .then(function() {
+                console.log('Email Sent!');
+            }, function(error) {
+                console.log('Email sending failed', error);
+            });
         Swal.fire({
+            heightAuto: false,
             title: 'Thank you!',
             text: 'Your form has been sent.',
             imageUrl: './media/splash-banner.jpg',
@@ -189,18 +193,12 @@ rsvpForm.addEventListener("submit", (e) => {
         document.getElementById('rsvpForm').reset();
     } else {
         Swal.fire({
+            heightAuto: false,
             icon: 'error',
             title: 'Oops...',
             text: 'Please select whether you\'re attending or not.',
         });
         return false;
     }
-
-    // alert("Thank you!");
-
-    console.log(rsvp + " | " + firstName + " | " + lastName + " | " + email + " | " + number);
-
-
-
 });
 //end submit form

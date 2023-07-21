@@ -233,7 +233,8 @@
     .invitation h2,
     .invitation h3 {
         text-transform: uppercase;
-        padding: 0.05em 0;
+        padding-bottom: 0.8em;
+        padding-top: 0.8em;
         text-align: center;
         font-size: 27.5px;
         color: var(--cl1--2--);
@@ -244,8 +245,8 @@
         text-transform: uppercase;
         color: var(--cl1--2--);
         font-size: 22px;
-        padding-bottom: 0.5em;
-        padding-top: 0.05em;
+        padding-bottom: 0.8em;
+        padding-top: 0.8em;
     }
     
     .invitation h5 {
@@ -254,7 +255,7 @@
         color: var(--cl1--2--);
         font-size: 19px;
         padding-bottom: 0;
-        padding-top: 0;
+        padding-top: 1em;
     }
     
     .invitation h1::first-letter {
@@ -267,7 +268,7 @@
     }
     
     .invitation .invi-loc-top {
-        padding-top: 4.5em;
+        padding-top: 7em;
     }
     /*End Invitation*/
     /*Details*/
@@ -388,7 +389,7 @@
     .details .dress-code-title h4 {
         padding-bottom: 0.8em;
         color: var(--cl1--3--);
-        padding-top: 8em;
+        padding-top: 11em;
     }
     
     .details .font-bold {
@@ -402,6 +403,8 @@
     }
     
     .details .rowlist h3 {
+        padding-top: 1em;
+        padding-bottom: 0.5em;
         color: var(--cl1--3--);
     }
     
@@ -449,6 +452,7 @@
     
     .details .rowlist p {
         color: var(--cl1--3--);
+        padding: 1em 0;
     }
     
     .details .details-background-img {
@@ -530,6 +534,10 @@
     .details h3,
     .form span {
         color: black;
+    }
+    
+    .memorylane p {
+        font-size: 22px;
     }
     
     .memorylane h2 {
@@ -734,6 +742,7 @@
         text-align: center;
         margin: auto;
         color: var(--cl1--3--);
+        padding-bottom: 3em;
     }
     
     .rsvp .checkbox-option {
@@ -792,6 +801,13 @@
         color: var(--cl1--2--);
     }
     /* End Footer */
+    /*Sweet Alert JS*/
+    
+    body.swal2-shown>[aria-hidden="true"] {
+        transition: 0.1s filter;
+        filter: blur(10px);
+    }
+    /*End Sweet Alert JS*/
     /*Media*/
     
     @media screen and (min-width:1200px) {
@@ -814,8 +830,20 @@
         .details .container {
             max-width: 800px;
         }
+        .details .details-background-img .iframe-bottom {
+            padding-bottom: 5em;
+        }
+        .details .dress-code-title h4 {
+            padding-top: 1em;
+        }
         .rsvp p {
             max-width: 600px;
+        }
+        .rsvp .rsvp-background-img {
+            background-image: url(./media/rsvp-bg-desktop.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         }
     }
     /* for mobile view */
@@ -829,7 +857,7 @@
         }
         .toggleMenu {
             right: 5%;
-            padding-left: 185%;
+            padding-left: 190%;
             background-image: url(./media/menu.png);
             background-repeat: no-repeat;
             background-position: center;
@@ -845,7 +873,7 @@
         }
         .toggleMenu.active {
             right: 5%;
-            padding-left: 185%;
+            padding-left: 190%;
             background-image: url(./media/close.png);
             background-size: 25px;
         }
@@ -876,6 +904,12 @@
         }
         nav ul {
             flex-direction: column;
+        }
+        .details .google-map {
+            padding-top: 25em;
+        }
+        .details .dress-code-title h4 {
+            padding-top: 3em;
         }
     }
     
