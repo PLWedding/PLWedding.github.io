@@ -583,6 +583,9 @@
     .gifts .container {
         max-width: 70%;
         text-align: justify;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        word-spacing: -0.05em;
     }
     
     .gifts h1 {
