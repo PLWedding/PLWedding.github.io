@@ -233,11 +233,14 @@
     .invitation h2,
     .invitation h3 {
         text-transform: uppercase;
-        padding-bottom: 0.8em;
-        padding-top: 0.8em;
         text-align: center;
         font-size: 27.5px;
         color: var(--cl1--2--);
+    }
+    
+    .invitation .invi-loc-desc {
+        padding-bottom: 0.8em;
+        padding-top: 0.8em;
     }
     
     .invitation h4 {
