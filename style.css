@@ -755,9 +755,9 @@
         color: var(--cl1--3--);
     }
     
-    .rsvp .contact p:active,
-    p:visited {
-        color: var(--cl1--3--);
+    .rsvp .contact p[href^="tel"] {
+        color: inherit;
+        text-decoration: none;
     }
     /*End RSVP*/
     /*Page Button*/
