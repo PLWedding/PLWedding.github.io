@@ -84,6 +84,11 @@ rsvpForm.addEventListener("submit", (e) => {
     if (rsvpAccept.checked) {
         let title = ' See you!';
         let body = 'We can\'t wait to see you at our ';
+        let bodyWhen = 'When: January 5, 2024 - 04:30 PM onwards\n';
+        let bodyWhere = 'Where: 8 Temple Drive, Quezon City\n';
+        let bodyDressCode = 'Dresscode:\n&emsp;Gents - Black Suit & Bowtie / Necktie (Bowtie preferred) \n&emsp;Ladies - Black long gown or tea-length dress (Long gown preferred) ';
+        let bodyTime = '\nCeremony proper starts at 04:30PM.'
+        let bodyReminder = '\nReminders: \n' + bodyWhen + bodyWhere + bodyDressCode;
         rsvp = rsvpAccept.value;
         if (optCeremony.checked && !optReception.checked) {
             emailjs.send("service_4c6smc5", "template_mqntrrp", {
@@ -91,6 +96,7 @@ rsvpForm.addEventListener("submit", (e) => {
                     firstName: firstName,
                     lastName: lastName,
                     body: body + optCeremony.value + '!',
+                    bodyReminder: bodyReminder,
                     email: email,
                     number: number,
                 })
@@ -115,6 +121,7 @@ rsvpForm.addEventListener("submit", (e) => {
                     firstName: firstName,
                     lastName: lastName,
                     body: body + optReception.value + '!',
+                    bodyReminder: bodyReminder,
                     email: email,
                     number: number,
                 })
@@ -139,6 +146,7 @@ rsvpForm.addEventListener("submit", (e) => {
                     firstName: firstName,
                     lastName: lastName,
                     body: body + optCeremony.value + ' and ' + optReception.value + '!',
+                    bodyReminder: bodyReminder,
                     email: email,
                     number: number,
                 })
