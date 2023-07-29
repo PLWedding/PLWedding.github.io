@@ -319,8 +319,8 @@
     }
     
     .google-map {
-        padding-top: 50%;
-        padding-bottom: 50%;
+        padding-top: 60%;
+        margin-bottom: 10%;
         position: relative;
         border: 4px solid var(--cl1--3--);
     }
@@ -397,7 +397,7 @@
     .details .dress-code-title h4 {
         padding-bottom: 0.8em;
         color: var(--cl1--3--);
-        padding-top: 11em;
+        padding-top: 1em;
     }
     
     .details .font-bold {
@@ -930,17 +930,10 @@
             flex-direction: column;
         }
         .details .google-map {
-            padding-top: 25em;
+            padding-top: 15em;
+            padding-bottom: 50%;
         }
         .details .dress-code-title h4 {
-            padding-top: 3em;
-        }
-    }
-    
-    @media screen and (max-width:600px) {
-        .bridal .filter-btns {
-            flex-direction: row;
-            max-width: max-content;
-            margin: 0 auto;
+            padding-top: 5em;
         }
     }
