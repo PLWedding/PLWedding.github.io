@@ -477,6 +477,11 @@
         background-position: center;
         background-size: cover;
     }
+    
+    .details .details-background-img .iframe-bottom h5 {
+        color: var(--cl1--2--);
+        padding-bottom: 20%;
+    }
     /*End Details*/
     /*Entourage*/
     
