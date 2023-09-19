@@ -31,7 +31,8 @@
     body {
         --cl1--1--: #fcf9f7;
         --cl1--2--: #3e3d39;
-        --cl1--3--: #c6ad83;
+        --cl1--3--: #B7950B;
+        --cl1--4--: #c6ad83;
         width: 100%;
         height: 100%;
         margin: 0px;
@@ -168,7 +169,7 @@
         font-family: 'BlackChancery', serif;
         font-size: 20px;
         text-transform: capitalize;
-        color: var(--cl1--3--);
+        color: var(--cl1--4--);
     }
     
     nav a:hover {
@@ -391,18 +392,18 @@
     }
     
     .details .dress-code h4 {
-        color: var(--cl1--3--);
+        color: var(--cl1--4--);
     }
     
     .details .dress-code-title h4 {
         padding-bottom: 0.8em;
-        color: var(--cl1--3--);
+        color: var(--cl1--4--);
         padding-top: 1em;
     }
     
     .details .font-bold {
         font-family: 'Butler_Bold', serif;
-        color: var(--cl1--3--);
+        color: var(--cl1--4--);
         /* text-shadow: -1px 1px 2px #cfaf8d, 1px 1px 2px #cfaf8d, 1px -1px 0 #cfaf8d, -1px -1px 0 #cfaf8d; */
     }
     
@@ -413,7 +414,7 @@
     .details .rowlist h3 {
         padding-top: 1em;
         padding-bottom: 0.5em;
-        color: var(--cl1--3--);
+        color: var(--cl1--4--);
     }
     
     .details .det-time,
@@ -423,7 +424,7 @@
     
     .details .det-child {
         padding-top: 2em;
-        color: var(--cl1--3--);
+        color: var(--cl1--4--);
     }
     
     .details .list {
@@ -437,20 +438,24 @@
         font-size: 18px;
         padding-top: 1em;
         text-align: center;
-        color: var(--cl1--3--);
+        color: var(--cl1--4--);
         list-style-type: disc;
     }
     
     .details .list li {
         font-size: 22px;
         text-align: center;
-        color: var(--cl1--3--);
+        color: var(--cl1--4--);
     }
     
     .details .flex-note {
         text-align: center;
         align-content: top;
         width: 100%;
+    }
+    
+    .details .flex-note h5 {
+        color: var(--cl1--4--);
     }
     
     .details .rowlist {
@@ -463,11 +468,11 @@
     
     .details .det-note {
         padding-bottom: 5em;
-        color: var(--cl1--3--);
+        color: var(--cl1--4--);
     }
     
     .details .rowlist p {
-        color: var(--cl1--3--);
+        color: var(--cl1--4--);
         padding: 1em 0;
     }
     
@@ -659,14 +664,14 @@
     .rsvp h1 {
         font-size: 55px;
         text-align: center;
-        color: var(--cl1--3--);
+        color: var(--cl1--4--);
     }
     
     .rsvp h3 {
         margin: 0 auto;
         font-size: 20px;
         text-align: center;
-        color: var(--cl1--3--);
+        color: var(--cl1--4--);
         padding-bottom: 0.5em;
         text-transform: none;
     }
@@ -690,11 +695,11 @@
     .form label {
         display: inline-black;
         padding-bottom: 0.5em;
-        color: var(--cl1--3--);
+        color: var(--cl1--4--);
     }
     
     .form input {
-        border: 1px solid var(--cl1--3--);
+        border: 1px solid var(--cl1--4--);
         outline: 0;
         max-width: 100%;
         padding: 0.5em;
@@ -733,7 +738,7 @@
     }
     
     .option .row:hover {
-        background: var(--cl1--3--);
+        background: var(--cl1--4--);
         color: var(--cl1--1--);
     }
     
@@ -744,7 +749,7 @@
         white-space: nowrap;
         padding: 0 1.5em;
         max-width: max-content;
-        color: var(--cl1--3--);
+        color: var(--cl1--4--);
         border: 0;
         border-radius: 40px;
         margin-top: 1.5em;
@@ -769,12 +774,12 @@
         text-transform: none;
         text-align: center;
         margin: auto;
-        color: var(--cl1--3--);
+        color: var(--cl1--4--);
         padding-bottom: 3em;
     }
     
     .rsvp .checkbox-option {
-        color: var(--cl1--3--);
+        color: var(--cl1--4--);
     }
     
     .rsvp .contact p[href^="tel"] {
@@ -787,7 +792,7 @@
     button {
         max-width: max-content;
         margin: 0 auto;
-        color: var(--cl1--3--);
+        color: var(--cl1--4--);
     }
     
     .page-btn {
@@ -796,7 +801,7 @@
         text-transform: capitalize;
         border: 0;
         border-radius: 40px;
-        box-shadow: 0 0 0 2px var(--cl1--3--);
+        box-shadow: 0 0 0 2px var(--cl1--4--);
         background: transparent;
         padding: 0.25em 1.5em;
         margin-top: 1.5em;
@@ -808,7 +813,7 @@
     }
     
     .page-btn:hover {
-        background: var(--cl1--3--);
+        background: var(--cl1--4--);
         color: var(--cl1--1--);
     }
     /*End Page Button*/
