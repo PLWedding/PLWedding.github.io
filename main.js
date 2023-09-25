@@ -84,10 +84,9 @@ rsvpForm.addEventListener("submit", (e) => {
     if (rsvpAccept.checked) {
         let title = ' See you!';
         let body = 'We can\'t wait to see you at our ';
-        let bodyWhen = 'When: January 5, 2024 - 04:30 PM onwards\n';
-        let bodyWhere = 'Where: 8 Temple Drive, Quezon City\n';
+        let bodyWhen = 'When: January 5, 2024 - 04:30 PM onwards. Gate opens at 04:00PM.\n';
+        let bodyWhere = 'Where: 8 Temple Drive, Greenmeadows III, Quezon City, Metro Manila\n';
         let bodyDressCode = 'Dresscode:\n&emsp;Gents - Black Suit & Bowtie / Necktie (Bowtie preferred) \n&emsp;Ladies - Black long gown or tea-length dress (Long gown preferred) ';
-        let bodyTime = '\nCeremony proper starts at 04:30PM.'
         let bodyReminder = '\nReminders: \n' + bodyWhen + bodyWhere + bodyDressCode;
         rsvp = rsvpAccept.value;
         if (optCeremony.checked && !optReception.checked) {
