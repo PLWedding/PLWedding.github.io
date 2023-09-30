@@ -131,10 +131,10 @@
         }
         
         .divider-img {
-            width: 6em;
-            height: 0.7em;
-            padding-top: 8%;
-            padding-bottom: 2%;
+            width: 4em;
+            height: 0.3em;
+            padding-top: 12%;
+            padding-bottom: 1%;
             align-items: center;
             margin: auto;
             display: block;
@@ -322,7 +322,7 @@
         
         .google-map {
             padding-top: 60%;
-            margin-bottom: 10%;
+            margin-bottom: 2%;
             position: relative;
             border: 4px solid var(--cl1--3--);
         }
@@ -397,15 +397,14 @@
         }
         
         .details .dress-code-title h4 {
+            margin-top: 3em;
             padding-bottom: 0.8em;
             color: var(--cl1--4--);
-            padding-top: 1em;
         }
         
         .details .font-bold {
             font-family: 'Butler_Bold', serif;
             color: var(--cl1--4--);
-            /* text-shadow: -1px 1px 2px #cfaf8d, 1px 1px 2px #cfaf8d, 1px -1px 0 #cfaf8d, -1px -1px 0 #cfaf8d; */
         }
         
         .details .det-header {
@@ -486,12 +485,11 @@
         
         .details .details-background-img .iframe-bottom h5 {
             color: var(--cl1--2--);
-            padding-bottom: 30%;
+            margin-bottom: 6em;
         }
         
-        .details a:hover {
-            color: var(--cl1--3--);
-            text-shadow: 0 0 3px var(--cl1--4--);
+        .details a u {
+            color: #808080;
         }
         /*End Details*/
         /*Entourage*/
@@ -608,7 +606,6 @@
         .gifts {
             padding: 0.2em 0;
             position: relative;
-            /* justify-content: center; */
             background-image: url(./media/default-bg.jpg);
             min-height: 35vh;
         }
@@ -961,7 +958,6 @@
         /*establishments*/
         
         .establishments {
-            /* padding-bottom: 2em; */
             position: relative;
             justify-content: center;
             background-image: url(./media/default-bg.jpg);
@@ -992,7 +988,6 @@
         .establishments .list {
             margin: auto;
             flex-wrap: wrap;
-            /* text-align: left; */
             gap: 0.1em;
             padding-right: 5em;
         }
@@ -1002,7 +997,7 @@
             padding-top: 1em;
             padding-left: 2em;
             color: var(--cl1--2--);
-            list-style-type: disclosure-closed;
+            list-style-type: disc;
             font-family: 'Butler_Regular', sans-serif;
         }
         
