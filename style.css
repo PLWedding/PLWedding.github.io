@@ -485,7 +485,7 @@
         
         .details .details-background-img .iframe-bottom h5 {
             color: var(--cl1--2--);
-            margin-bottom: 6em;
+            margin-bottom: 2em;
         }
         
         .details a u {
@@ -872,7 +872,7 @@
                 max-width: 800px;
             }
             .details .details-background-img .iframe-bottom {
-                padding-bottom: 1em;
+                padding-bottom: 5em;
             }
             .details .dress-code-title h4 {
                 padding-top: 1em;
