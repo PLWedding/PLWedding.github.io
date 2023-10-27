@@ -389,10 +389,10 @@
         
         .details .dress-code {
             letter-spacing: 2.5px;
-            font-size: 22px;
         }
         
         .details .dress-code h4 {
+            font-size: 23px;
             color: var(--cl1--4--);
         }
         
@@ -404,6 +404,7 @@
         
         .details .font-bold {
             font-family: 'Butler_Bold', serif;
+            font-size: 28px;
             color: var(--cl1--4--);
         }
         
