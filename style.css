@@ -964,6 +964,20 @@
             min-height: 60vh;
         }
         
+        .establishments .container-border {
+            max-width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-top: 2em;
+        }
+        
+        .establishments .container-border-hotel {
+            max-width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-top: 2em;
+        }
+        
         .establishments h1 {
             font-size: 55px;
             color: var(--cl1--3--);
